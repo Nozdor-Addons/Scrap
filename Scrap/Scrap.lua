@@ -24,6 +24,10 @@ local MatchClass, Class = ITEM_CLASSES_ALLOWED:format(''), UnitClass('player')
 local MatchTrade = BIND_TRADE_TIME_REMAINING:format('.*')
 local Unusable, List = Scrap_Unusable
 
+local ProtectedItems = {
+	[24370] = true,
+	[23208] = true,
+}
 
 --[[ Events ]]--
 
@@ -52,6 +56,9 @@ end
 
 function Scrap:IsJunk(itemID)
 	if itemID then
+		if ProtectedItems[itemID] then
+			return nil
+		end
 		local _, itemLink, itemQuality, _,_, itemType, itemSubType, _, itemSlot, _, itemValue = GetItemInfo(itemID)
 		local valuable = itemQuality ~= ITEM_QUALITY_POOR or itemValue == 0
 		
