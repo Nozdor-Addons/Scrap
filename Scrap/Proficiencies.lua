@@ -25,6 +25,9 @@ elseif Class == 'SHAMAN' then
 elseif Class == 'WARLOCK' then
 	Unusable = {'Leather', 'Mail', 'Plate', 'Shields', 'Librams', 'Idols', 'Totems', 'Sigils', 'One-Handed Axes', 'Two-Handed Axes', 'Bows',
 	'Guns', 'One-Handed Maces', 'Two-Handed Maces', 'Polearms', 'Two-Handed Swords', 'Fist Weapons', 'Thrown', 'Crossbows', 'Off Hand'}
+elseif Class == 'DEMONHUNTER' then
+	Unusable = {'Mail', 'Plate', 'Shields', 'Librams', 'Idols', 'Totems', 'Sigils', 'Two-Handed Axes', 'One-Handed Maces',
+	'Two-Handed Maces', 'Polearms', 'Two-Handed Swords', 'Staves', 'Bows', 'Guns', 'Thrown', 'Crossbows', 'Wands'}
 elseif Class == 'WARRIOR' then
 	Unusable = {'Librams', 'Idols', 'Totems', 'Sigils', 'Wands'}
 end
