@@ -5,6 +5,7 @@
 ## Author: Jaliborc (João Cardoso)
 ## X-License: GNU General Public License Version 3
 ## X-Category: Inventory
+## X-Nozdor-DemonHunter: 1
 
 ## SavedVariablesPerCharacter: Scrap_List
 ## SavedVariables: Scrap_AutoSell, Scrap_Tutorials
